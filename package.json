@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "release": "release-it"
+    "changelog": "auto-changelog -p",
+    "release": "npm run changelog && release-it"
   },
   "dependencies": {
     "next": "15.3.4",
@@ -21,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "auto-changelog": "^2.5.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
     "release-it": "^19.0.3",
